@@ -11,7 +11,8 @@
 .main-text,
 .block-input,
 .block-radio,
-.app-link p {
+.app-link p,
+.download-subtitle {
   margin-bottom: 20px;
 }
 
@@ -110,4 +111,29 @@ label input[type="radio"]:checked + .radio-btn::after {
   top: 40px;
   left: 0;
   width: 30%;
+}
+@media screen and (max-width: 881px) {
+  .input-field {
+    margin-bottom: 10px;
+  }
+  .download-block-pic {
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 881px) {
+  .download_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .download-block-pic {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .download {
+    padding-top: 100px;
+  }
+  .download-title {
+    font-size: 60px;
+  }
 }
