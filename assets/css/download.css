@@ -1,0 +1,113 @@
+.download {
+  padding-top: 200px;
+}
+.download_container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.about-content {
+  width: 100%;
+}
+.main-text,
+.block-input,
+.block-radio,
+.app-link p {
+  margin-bottom: 20px;
+}
+
+.download-title {
+  font-weight: 300;
+  font-size: 72px;
+}
+.download-title span {
+  font-weight: 600;
+  color: var(--blue);
+}
+.title-text {
+  width: 60%;
+  font-size: 30px;
+  font-weight: 300;
+  text-wrap: wrap;
+  margin-bottom: 20px;
+}
+.block-radio label {
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.block-radio input[type="radio"] {
+  display: none;
+}
+.radio-btn {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 20px;
+  border: solid 2px black;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.radio-btn::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-51%, -52%);
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+label input[type="radio"]:checked + .radio-btn::after {
+  background-color: var(--blue);
+}
+
+.input-field {
+  margin-right: 20px;
+  font-size: 16px;
+  padding: 16px 64px 16px 16px;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+.input-field::placeholder {
+  font-size: 16px;
+}
+.btn-share {
+  padding: 14px 40px;
+  background-color: var(--blue);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.app-link p {
+  font-size: 24px;
+  font-weight: 250;
+}
+.icon {
+  display: flex;
+  gap: 20px;
+}
+.icon img {
+  width: 200px;
+  height: 80px;
+  object-fit: contain;
+}
+/* css khối hình ảnh  */
+.download-block-pic {
+  width: 100%;
+  position: relative;
+}
+.desktop {
+  width: 80%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mobile {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 30%;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/Layout.css" />
+    <link rel="stylesheet" href="../assets/css/download.css" />
+    <title>Your voice</title>
+  </head>
+  <body>
+    <header class="bd-container">
+      <div class="nav">
+        <div class="logo_header">
+          <img
+            src="../assets/img/images/Logo-background.png"
+            alt="Your voice"
+          />
+          <p class="logo-text">YOUR VOICE</p>
+        </div>
+        <div class="nav_menu">
+          <ul>
+            <li class="nav_item"><a href="../index.html">Home</a></li>
+            <li class="nav_item"><a href="./library.html">Library</a></li>
+            <li class="nav_item"><a href="./about.html">About</a></li>
+            <li class="nav_item">
+              <a href="download.html">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-btn"><button class="btn">Contact us</button></div>
+      <div class="menu_btn"><div class="icon"></div></div>
+    </header>
+    <div class="nav-menu-mobile">
+      <ul>
+        <li class="nav_item"><a href="../index.html">Home</a></li>
+        <li class="nav_item"><a href="./library.html">Library</a></li>
+        <li class="nav_item"><a href="./about.html">About</a></li>
+        <li class="nav_item">
+          <a href="download.html">Download</a>
+        </li>
+        <button class="btn">Contact us</button>
+      </ul>
+    </div>
+    <section class="download" id="download">
+      <div class="download_container bd-container">
+        <div class="download_content">
+          <h1 class="download-title">Get <span>Your Voice</span> App</h1>
+          <p class="download-subtitle">
+            We will send you a link, open it on your phone to download the app.
+          </p>
+          <div class="input-group">
+            <div class="block-radio">
+              <label>
+                <input
+                  type="radio"
+                  name="contact-input"
+                  value="number"
+                  onclick="changeValue()"
+                />
+                <span class="radio-btn"></span> Phone</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="contact-input"
+                  value="email"
+                  onclick="changeValue()"
+                />
+                <span class="radio-btn"></span> Email</label
+              >
+            </div>
+            <div class="block-input">
+              <input
+                type="text"
+                id="contact-input"
+                placeholder="Your Phone Number"
+                class="input-field"
+              />
+              <button class="btn-share">Share App Link</button>
+            </div>
+          </div>
+          <div class="app-link">
+            <p>Download App from</p>
+            <div class="icon">
+              <a href="#"
+                ><img
+                  src="../assets/img/images/ggplay.png"
+                  alt="Get it on GooglePlay"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/img/images/appstore.png"
+                  alt="Download on the AppStore"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="download-block-pic">
+          <img
+            src="../assets/img/images/laptop.png"
+            alt="Picture"
+            class="desktop"
+          />
+          <img
+            src="../assets/img/images/mobile.png"
+            alt="Picture"
+            class="mobile"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="../assets/js/EventHeader.js"></script>
+  </body>
+</html>
